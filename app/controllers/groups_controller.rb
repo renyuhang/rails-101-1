@@ -25,8 +25,7 @@ if @group.save
    end
  end
 
- redirect_to groups_path
-    end
+
 
     def update
         @group = Group.find(params[:id])
@@ -48,4 +47,5 @@ private
 
 def group_params
 params.require(:group).permit(:title, :description)
+end
 end
